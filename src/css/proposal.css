@@ -201,6 +201,9 @@ top: 8px;
 
 /* 768p */
 @media (min-width: 768px) {
+  .main {
+    padding: 32px;
+  }
   .english-title {
     font-weight: 700;
     font-size: 60px;
@@ -210,6 +213,7 @@ top: 8px;
     max-width: 640px;
     position: relative;
     top: 64px;
+    margin-left: 14px;
   }
 
   .english-card {
@@ -270,9 +274,12 @@ top: 8px;
 
 /*1280*/
 @media (min-width: 1280px) {
-
+  .english-card-wrapper {
+    margin: 0 44px;
+}
   .english-title {
     max-width: 776px;
+    margin-left: 44px;
   }
   .english-card {
     margin-top: 170px;
