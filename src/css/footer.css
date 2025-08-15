@@ -14,11 +14,6 @@ footer{
     margin: 0;
     padding: 0;
 }
-.container{
-    min-width: 1024px;
-    padding: 0px;
-    margin: auto;
-}
 
 .footer-credentials{
     display: flex;
