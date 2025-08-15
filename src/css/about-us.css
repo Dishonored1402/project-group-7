@@ -48,13 +48,10 @@
     margin-bottom: 16px;
     border-radius: 16px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     width: 335px;
     height: 160px;
-    height: auto; 
-    min-height:160px; 
   }
   
   .about-us__item:last-of-type {
