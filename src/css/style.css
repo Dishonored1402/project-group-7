@@ -10,8 +10,10 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./colors.css');
 
 /* Sections style */
 
 @import url('./about-us.css');
 @import url('./our-lessons.css');
+@import url('./header.css');
