@@ -1,0 +1,74 @@
+<section class="application">
+  <div class="container">
+    <h2 class="application__title">Leave an <span>application</span></h2>
+    <p class="application__description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="application__content">
+      <figure class="teacher-card">
+        <img
+          src="img/application/1.svg"
+          alt="Online lesson"
+          class="teacher-card__img"
+        />
+        <div class="teacher-card__caption">
+          <div class="teacher-card__number">1000</div>
+          <p class="teacher-card__text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </figure>
+      <form class="apply__form" action="/apply" method="post" novalidate>
+        <div class="input-container">
+          <label class="field"
+            ><input type="text" name="name" placeholder="Name" required
+          /></label>
+          <label class="field"
+            ><input type="email" name="email" placeholder="Email" required
+          /></label>
+          <label class="field"
+            ><input type="tel" name="phone" placeholder="Phone"
+          /></label>
+          <label class="field">
+            <textarea name="comment" placeholder="Comment" rows="4"></textarea>
+          </label>
+        </div>
+        <fieldset class="teachers">
+          <legend>Choose a teacher</legend>
+          <div class="teachers-radio">
+            <label class="custom-radio">
+              <input type="radio" name="teacher" value="maria" checked />
+              <span class="radio-icon"></span>
+              Maria
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="teacher" value="artem" />
+              <span class="radio-icon"></span>
+              Artem
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="teacher" value="ilona" />
+              <span class="radio-icon"></span>
+              Ilona
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="teacher" value="volodymyr" />
+              <span class="radio-icon"></span>
+              Volodymyr
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="apply__button" type="submit">Send</button>
+        <p class="apply__note">
+          By clicking on “Send” button, you agree to our
+          <a href="/privacy-policy" class="apply__link">Privacy Policy</a>, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
