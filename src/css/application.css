@@ -42,7 +42,7 @@
   font-weight: 400;
   font-size: 14px;
 
-  max-width: 335px;
+  min-width: 335px;
   line-height: 1.7;
   text-align: center;
   color: rgba(18, 20, 23, 0.8);
@@ -59,7 +59,8 @@
 .teacher-card {
   display: none;
   flex-direction: column;
-  max-width: 355px;
+  min-width: 492px;
+  min-height: 570px;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -257,7 +258,7 @@
 
   .application__description {
     font-size: 18px;
-    max-width: 586px;
+    min-width: 586px;
     color: rgba(18, 20, 23, 0.5);
   }
 
@@ -314,16 +315,16 @@
     display: flex;
   }
 
+  .application__description {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 709px;
+    padding-bottom: 64px;
+  }
+
   .application__content {
     flex-direction: row;
     /* justify-content: center; */
-    gap: 40px;
-  }
-
-  .about-us {
-    max-width: 1280px;
-    align-items: center;
-    padding: 0 64px;
-    margin-bottom: 150px;
+    gap: 32px;
   }
 }
