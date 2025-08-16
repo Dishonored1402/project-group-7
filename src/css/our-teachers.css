@@ -116,9 +116,11 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+
+/* Mobile*/
+@media (max-width: 375px) {
   .card-item {
-    flex: 1 1 100%; /* 1 in a row on mobile */
+    flex: 1 1 100%; 
   }
 }
 
