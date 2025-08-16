@@ -310,6 +310,16 @@
 
 /* Responsive for Desktop (min-width 1280px) */
 @media screen and (min-width: 1280px) {
+  .teacher-card {
+    display: flex;
+  }
+
+  .application__content {
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 40px;
+  }
+
   .about-us {
     max-width: 1280px;
     align-items: center;
