@@ -161,6 +161,9 @@
   gap: 8px;
   margin-bottom: 40px;
   align-items: flex-start;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 .custom-radio {
@@ -247,10 +250,61 @@
 
 /* Responsive for Tablet (min-width 768px) */
 @media screen and (min-width: 768px) {
-  .about-us {
-    max-width: 768px;
-    padding: 0 32px;
-    margin-bottom: 100px;
+  .application__title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .application__description {
+    font-size: 18px;
+    max-width: 586px;
+    color: rgba(18, 20, 23, 0.5);
+  }
+
+  .apply__form_wrap {
+    max-width: 439px;
+  }
+
+  .apply__form .field > input::placeholder,
+  .apply__form .field > textarea::placeholder {
+    color: var(--color-black);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .teachers {
+    margin-top: 32px;
+  }
+
+  .teachers legend {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+
+  .teachers-radio {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+  }
+
+  .apply__button {
+    max-width: 439px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .apply__note {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 
