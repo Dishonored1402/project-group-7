@@ -21,24 +21,53 @@
           </p>
         </div>
       </figure>
-      <form
-        class="apply__form apply__form_wrap"
-        action="/apply"
-        method="post"
-        novalidate
-      >
+      <form class="apply__form apply__form_wrap" action="/apply" method="post">
         <div class="input-container">
-          <label class="field"
-            ><input type="text" name="name" placeholder="Name" required
-          /></label>
-          <label class="field"
-            ><input type="email" name="email" placeholder="Email" required
-          /></label>
-          <label class="field"
-            ><input type="tel" name="phone" placeholder="Phone"
-          /></label>
           <label class="field">
-            <textarea name="comment" placeholder="Comment" rows="4"></textarea>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              autocomplete="name"
+              required
+              pattern="^[A-Za-z'\- ]{2,40}$"
+              title="2–40 characters: letters, spaces, apostrophe, or dash only."
+            />
+          </label>
+
+          <label class="field">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+              title="Enter a valid email address (e.g. name@example.com)."
+            />
+          </label>
+
+          <label class="field">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              pattern="^\+?380\d{9}$"
+              title="Format: +380XXXXXXXXX (9 digits after 380)."
+            />
+          </label>
+
+          <label class="field">
+            <textarea
+              name="comment"
+              placeholder="Comment"
+              rows="4"
+              maxlength="300"
+              title="Maximum length 300 characters."
+            ></textarea>
           </label>
         </div>
         <fieldset class="teachers">
