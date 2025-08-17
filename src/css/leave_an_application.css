@@ -1,0 +1,261 @@
+/* Section */
+.proposal {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.proposal__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title with green highlight only under "application" */
+.proposal__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.125;
+  margin-bottom: 16px;
+}
+
+.proposal__title span {
+  position: relative;
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.proposal__title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.08em;
+  height: 0.38em;
+  background: var(--color-green-pseudo);
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.proposal__desc {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(18, 20, 23, .5);
+}
+
+/* Layout */
+.proposal__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Left card */
+.proposal__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #f3f5f6;
+  margin: 0;
+  text-align: left;
+}
+
+.proposal__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Green curved overlay */
+.proposal__overlay {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  height: 48%;
+  background: var(--color-green);
+  border-top-left-radius: 100% 80%;
+  border-top-right-radius: 100% 80%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 24px 24px 28px;
+}
+
+.proposal__count {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  margin: 0 0 8px;
+}
+
+.proposal__caption {
+  max-width: 520px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: .95;
+  text-align: center;
+}
+
+/* Form */
+.proposal__form {
+  display: grid;
+  gap: 14px;
+  text-align: left;
+}
+
+.proposal__field {
+  display: block;
+}
+
+.proposal__input {
+  width: 100%;
+  border: 1px solid rgba(18, 20, 23, .1);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font: inherit;
+  background: #fff;
+  outline: none;
+}
+
+.proposal__input:focus {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, .25);
+}
+
+.proposal__field--textarea .proposal__textarea {
+  min-height: 108px;
+  resize: vertical;
+}
+
+/* Teachers as chips */
+.proposal__teachers {
+  border: 0;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.proposal__legend {
+  font-size: 14px;
+  color: #121417;
+  margin-bottom: 10px;
+}
+
+.proposal__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.option {
+  display: inline-flex;
+}
+
+.option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.option span {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(18, 20, 23, .2);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.option input:checked+span {
+  background: var(--color-green);
+  color: #fff;
+  border-color: var(--color-green);
+}
+
+/* Button + note */
+.proposal__btn {
+  margin-top: 8px;
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: var(--color-green);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.proposal__btn:hover {
+  filter: brightness(.95);
+}
+
+.proposal__note {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(18, 20, 23, .5);
+}
+
+.proposal__link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Breakpoints */
+@media (min-width: 768px) {
+  .proposal {
+    padding: 0 32px;
+    margin-bottom: 100px;
+  }
+
+  .proposal__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .proposal__title span::after {
+    height: 0.5em;
+    bottom: 0.1em;
+  }
+
+  .proposal__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .proposal__desc {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
+  .proposal__overlay {
+    height: 46%;
+    padding: 24px 28px 32px;
+  }
+
+  .proposal__count {
+    font-size: 44px;
+  }
+
+  .proposal__caption {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .proposal {
+    padding: 0 64px;
+    margin-bottom: 150px;
+  }
+}
