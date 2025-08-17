@@ -262,6 +262,10 @@
     color: rgba(18, 20, 23, 0.5);
   }
 
+  .apply__form {
+    margin-top: 64px;
+  }
+
   .apply__form_wrap {
     max-width: 439px;
   }
@@ -324,7 +328,22 @@
 
   .application__content {
     flex-direction: row;
-    /* justify-content: center; */
     gap: 32px;
+    align-items: stretch;
+  }
+
+  .apply__form {
+    margin: 0;
+  }
+
+  .application__content > * {
+    flex: 1;
+  }
+
+  .application__content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
   }
 }
