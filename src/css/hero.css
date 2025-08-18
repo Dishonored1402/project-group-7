@@ -28,7 +28,7 @@
   font-style: Bold;
   font-size: 60px;
   line-height: 70px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   max-width: 564px;
   display: block;
   margin-bottom: 32px;
@@ -48,7 +48,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #ffffff;
 }
 
