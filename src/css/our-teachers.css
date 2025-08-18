@@ -8,7 +8,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 128px;
 }
 
 /* Section title */
@@ -44,7 +44,7 @@ body {
   max-width: 709px;
   height: 60px;
   opacity: 1;
-  margin: 0 auto 100px; 
+  margin: 0 auto 64px; 
 }
 
 /* Card list layout */
@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: calc((100% - (23.5% * 4)) / 3);
+  gap: 32px;
 }
 
 /* Card item */
@@ -61,7 +61,7 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 40px;
-  flex: 1 1 calc(20% - 64px);
+  flex: 1 1 calc((100% - 96px)/4);
   width: 23.5%;
 }
 
@@ -72,7 +72,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 64px;
 }
 
 /* Name */
@@ -116,9 +116,54 @@ body {
   }
 }
 
+/* --- Mobile --- */
 @media (max-width: 600px) {
+  .container {
+    padding: 0 20px; /* замість 128px */
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .section-description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 40px; /* як у макеті */
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column; /* завжди в колонку */
+    gap: 40px; /* відстань між картками */
+    align-items: center; /* щоб текст і фото були по центру */
+  }
+
   .card-item {
-    flex: 1 1 100%; /* 1 in a row on mobile */
+    width: 100%;
+    max-width: 335px; /* як у Figma */
+    text-align: center;
+  }
+
+  .card-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+  }
+
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
