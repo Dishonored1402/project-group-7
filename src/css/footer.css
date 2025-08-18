@@ -8,7 +8,8 @@ a{
     text-decoration: none;
 }
 footer{
-    width: 100vw;
+    overflow: clip;
+    width: 100%;
     background-color: #121417;
     color: #ffffff;
     margin: 0;
