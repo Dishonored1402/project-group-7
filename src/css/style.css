@@ -28,3 +28,45 @@
 @import url('./hero.css');
 
 @import url('./proposal.css');
+
+/* ===== spacing only for Teachers & Reviews ===== */
+
+#our_teachers, .our-teachers {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+#reviews, .reviews {
+  padding-top: 72px;
+  padding-bottom: 88px;
+}
+
+/* tablet ≥768px */
+@media (min-width: 768px) {
+  #our_teachers, .our-teachers { padding: 96px 0; }
+  #reviews, .reviews { padding: 104px 0; }
+}
+
+/* desktop ≥1280px */
+@media (min-width: 1280px) {
+  #our_teachers, .our-teachers { padding: 128px 0; }
+  #reviews, .reviews { padding: 128px 0 144px; }
+}
+
+/* немного расстояния под заголовками этих секций */
+#our_teachers .section-title,
+.our-teachers .section-title,
+#reviews .reviews__title {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #our_teachers .section-title,
+  .our-teachers .section-title,
+  #reviews .reviews__title { margin-bottom: 32px; }
+}
+@media (min-width: 1280px) {
+  #our_teachers .section-title,
+  .our-teachers .section-title,
+  #reviews .reviews__title { margin-bottom: 40px; }
+}
+
