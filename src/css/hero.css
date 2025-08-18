@@ -113,3 +113,11 @@
 }
 }
 
+.scroll-icon path {
+  stroke: #4DC274;
+  fill: none;
+}
+
+.scroll-down:hover .scroll-icon path {
+  stroke: #ffffff;
+}
